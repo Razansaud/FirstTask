@@ -1,0 +1,41 @@
+body{
+    font-family: arial;
+    font-size: 20px;
+    margin: 0;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.texts p{
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+.btn{
+
+      background-color: rgb(99,9,70);
+      height: 90px;
+      width: 150px;
+      border: none;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 40px;
+      position: absolute;
+      transition: 1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 30%;
+
+
+}
+
+.btn:hover{
+    background: #87CEEB;
+}

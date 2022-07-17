@@ -1,0 +1,36 @@
+Step 1: First you need to download and install Arduino IDE software
+
+Step 2: After installing, open IDE and go to Files -> Preferences and open preference window and see the “Additional Boards Manager URL’s”.
+
+Step 3: This box may be empty or contain some other URL,You just have to paste the below URL into this box if the box contains already another URL, then paste it by separating another URL using comma(,):
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
+Step 4: After pasting the given URL press OK and the window will disappear.
+
+Step 5: go to Tools-> Board-> Board Manager and search for ESP32 and press install, it will take some time to install, make sure that you have an internet connection.
+
+Step 6: close the window of board manager and Now you are ready to program your ESP32 using Arduino IDE.
+
+Step 7: connect your ESP32 to your computer using a micro-USB cable, make sure that the LED goes high after connecting it with the PC.
+
+Step 8: Now you have to select your board so go to Tools-> Boards and select “ESP32 Dev Module”.
+
+Step 9: Now open device manager and check to which com port ESP32 is connected.
+
+Step 10: Open Arduino IDE again and paste the given LED blink program:
+
+int LED_BUILTIN = 2;
+void setup() {
+pinMode (LED_BUILTIN, OUTPUT);
+}
+void loop() {
+digitalWrite(LED_BUILTIN, HIGH);
+delay(1000);
+digitalWrite(LED_BUILTIN, LOW);
+delay(1000);
+}
+
+Step 11: Now upload the code in ESP32, click on the upload button(its arrow inside circle).
+
+Step 9: After uploading the code, you will see a window like this and finds “Done uploading"  if everything you did earlier was correct.
